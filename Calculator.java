@@ -39,5 +39,9 @@ public class Calculator {
 
         return sum;
     }
+
+    public double mean(double[] arr) {
+        return sumArray(arr) / arr.length;
+    }
     
 }
