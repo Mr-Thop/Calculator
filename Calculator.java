@@ -13,11 +13,20 @@ public class Calculator {
     }
 
     public double divide(double a, double b) { 
-        if (b != 0){
+        if (b != 0) {
             return a / b ;
         }
-        else{
+        else {
             return Double.NaN ;
         }
+    }
+
+    public int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }   
     }
 }
