@@ -47,7 +47,7 @@ public class Calculator {
     public double variance(double[] arr) {
         double mean = mean(arr);
         double sum = 0;
-        
+
         for (double num : arr) {
             sum += Math.pow(num - mean, 2);
         }
@@ -55,4 +55,7 @@ public class Calculator {
         return sum / arr.length;
     }
 
+    public double standardDeviation(double[] arr) {
+        return Math.sqrt(variance(arr));
+    }
 }
